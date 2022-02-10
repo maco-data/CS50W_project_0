@@ -2,6 +2,7 @@ body {
   margin: 0px;
   height: 100vh;
   font-family: Arial, sans-serif;
+  min-width: 400px;
 }
 
 input {
@@ -50,9 +51,13 @@ input.blue-button {
   color: black;
   padding: 10px;
   text-decoration: none;
+  font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
+}
+.header a:hover, .header-links a:hover, .header-advanced-logo a:hover, .header-advanced a:hover {
+  text-decoration-line: underline;
 }
 .header-advanced {
-  background-color: #f1f1f1;
+  background-color: white;
   height: 50px;
 }
 .header-advanced-logo {
@@ -94,6 +99,10 @@ input.blue-button {
   align-items: center;
   margin: 10px;
   padding-left: 15px;
+}
+.search-container .search-field:hover {
+  border: none;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 .search-container .search-field input {
   border: none;

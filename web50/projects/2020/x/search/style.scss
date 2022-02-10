@@ -2,6 +2,7 @@ body {
   margin: 0px;
   height: 100vh;
   font-family: Arial, sans-serif;
+  min-width: 400px;
 }
 
 input {
@@ -54,11 +55,15 @@ input {
     color: black;
     padding: 10px;
     text-decoration: none;
+    font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 
   &-advanced {
     @extend .header;
-    background-color: #f1f1f1;
+    background-color: white;
     height: 50px;
   }
 
@@ -107,6 +112,11 @@ input {
     align-items: center;
     margin: 10px;
     padding-left: 15px;
+
+    &:hover {
+      border: none;
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    }
 
     input {
       border: none;
